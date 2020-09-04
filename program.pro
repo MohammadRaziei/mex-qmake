@@ -11,7 +11,7 @@ QMAKE_CXXFLAGS += -Wall -Wextra
 ######################################################
 ######              PARAMETERS                  ######
 ######################################################
-DESTDIR = debug
+DESTDIR = #debug
 
 OUTPUTNAME = test
 
@@ -46,5 +46,5 @@ defineTest(run) {
   !build_pass:system($$1)
 }
 
-print($$COMMAND)
+#print($$COMMAND)
 run($$COMMAND)
